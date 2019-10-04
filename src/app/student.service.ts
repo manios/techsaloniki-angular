@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable } from 'rxjs';
 import { Student } from './student';
+import { Observable } from 'rxjs';
+import { ActionStatus } from './action-status';
+
 
 const API_URL: string = 'http://localhost:8081/students';
 const GET_ALL_STUDENTS_URL: string = API_URL + '/all';
@@ -32,4 +34,8 @@ export class StudentService {
         return this.http.get<Student[]>(GET_ALL_STUDENTS_URL);
     }
     
+    addStudent(s: Student): Observable<ActionStatus> {
+
+        return this.http.post<ActionStatus>(ADD_STUDENTS_URL, s, httpOptions);
+    }
 }

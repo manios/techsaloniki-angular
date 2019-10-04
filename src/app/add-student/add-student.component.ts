@@ -25,6 +25,23 @@ export class AddStudentComponent implements OnInit {
      * @param surname student surname
      */
     addStudent(name: String, surname: String) {
-        // TODO add implementation
+        this.isLoading = true;
+
+        let myStudent = new Student(name, surname);
+
+        this.studentService
+            .addStudent(myStudent)
+            .subscribe(
+                st => {
+
+                    this.isLoading = false;
+
+                    this.router.navigate(['/']);
+                },
+                error => {
+                    this.errors = error.json().errors;
+                    this.isLoading = false;
+                }
+            );
     }
 }
