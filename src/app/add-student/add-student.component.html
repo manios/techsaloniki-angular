@@ -1,0 +1,22 @@
+<p>
+    add-student works!
+</p>
+<span class="help is-danger">{{ errors }}</span>
+<!-- Name Input field -->
+<div class="field">
+    <div class="control">
+        <label for="name">Name</label>
+        <input id="name" class="input" #studentName (keydown)="errors = ''">
+    </div>
+</div>
+
+<!-- Surname Input field -->
+<div class="field">
+    <div class="control">
+        <label for="surname">Surname</label>
+        <input id="surname" class="input" #studentSurname (keydown)="errors = ''">
+    </div>
+</div>
+
+<button type="button" class="button is-primary" [class.is-loading]="isLoading" (click)="addStudent(studentName.value,studentSurname.value)">Add
+    Student</button>
