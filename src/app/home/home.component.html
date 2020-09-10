@@ -1,28 +1,27 @@
 <p>
     home works!
-  </p>
-  
-  <div>
-      <span class="help is-info" *ngIf="isLoading">Loading...</span>
-      <span class="help is-error" *ngIf="errorMessage">{{ errorMessage }}</span>
-      <table class="table" *ngIf="!isLoading && !errorMessage">
-          <thead>
-              <tr>
-                  <th>ID</th>
-                  <th>Name</th>
-                  <th>Surname</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr *ngFor="let student of students">
-                  <td>{{ student.id }}</td>
-                  <td>{{ student.name }}</td>
-                  <td>{{ student.surname }}</td>
-                  <!-- <td>
-                      <button class="button is-primary">Delete Player</button>
-                  </td> -->
-              </tr>
-          </tbody>
-      </table>
-  </div>
-  
+</p>
+
+<div>
+    <span class="help is-info" *ngIf="isLoading">Loading...</span>
+    <span class="help is-error" *ngIf="errorMessage">{{ errorMessage }}</span>
+    <table class="table" *ngIf="!isLoading && !errorMessage">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Surname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{ student.id }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.surname }}</td>
+                <!-- <td>
+                    <button class="button is-primary">Delete Player</button>
+                </td> -->
+            </tr>
+        </tbody>
+    </table>
+</div>

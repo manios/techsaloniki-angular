@@ -1,12 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { Student } from '../student';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { StudentService } from '../student.service';
+import { Student } from '../student';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-add-student',
-  templateUrl: './add-student.component.html',
-  styleUrls: ['./add-student.component.sass']
+    selector: 'app-add-student',
+    templateUrl: './add-student.component.html',
+    styleUrls: ['./add-student.component.css']
 })
 export class AddStudentComponent implements OnInit {
 
