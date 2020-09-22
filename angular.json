@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "techsaloniki"
+    }
+  },
+  "defaultProject": "techsaloniki",
+  "cli": {
+    "analytics": false
+  }
 }
