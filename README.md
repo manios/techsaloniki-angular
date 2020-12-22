@@ -2,7 +2,7 @@
 
 A small Angular application which acts as the frontend of [techsaloniki-spring](https://github.com/manios/techsaloniki-spring).  It was developed as a tutorial of Spring Boot and Angular for workshop puproses on  [Techsaloniki event](https://techsaloniki.gr/techsaloniki-5), Greece (2019-10-05).
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.5.
 
 ## Branches
 
